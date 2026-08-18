@@ -4582,4 +4582,7 @@
 
     <!-- Description for the Ambient Cue accessibility action label for expanding. [CHAR LIMIT=NONE] -->
     <string name="ambient_cue_expand_action">expand</string>
+    <string name="quick_settings_sound_tile_label">Sound</string>
+    <string name="quick_settings_sound_tile_vibrate">Vibrate</string>
+    <string name="quick_settings_sound_tile_silent">Silent</string>
 </resources>
