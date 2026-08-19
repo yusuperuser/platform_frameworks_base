@@ -13257,6 +13257,12 @@ public final class Settings {
         public static final String ACCESSIBILITY_FORCE_INVERT_COLOR_ENABLED =
                 "accessibility_force_invert_color_enabled";
 
+        /** Dark theme mode: 0=standard, 1=expanded, 2=true dark.
+         * @hide
+         */
+        public static final String DARK_THEME_MODE =
+                "dark_theme_mode";
+
         /**
          * Whether to enable mouse keys for Physical Keyboard accessibility.
          *
