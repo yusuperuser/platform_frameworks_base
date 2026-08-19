@@ -1,0 +1,9 @@
+package {
+    default_applicable_licenses: ["frameworks_base_packages_overlays_license"],
+}
+
+runtime_resource_overlay {
+    name: "TrueDarkThemeOverlay",
+    theme: "TrueDarkTheme",
+    product_specific: true,
+}
