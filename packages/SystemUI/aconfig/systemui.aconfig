@@ -2054,6 +2054,7 @@ flag {
 
 flag {
     name: "blur_settings_toggle"
+    value: ENABLED
     namespace: "systemui"
     description: "Add a settings toggle to enable/disable blur."
     bug: "418000779"
