@@ -105,7 +105,6 @@ public class SoundTile extends QSTileImpl<BooleanState> {
     @Override
     protected void handleUpdateState(BooleanState state, Object arg) {
         state.label = mContext.getString(R.string.quick_settings_sound_tile_label);
-        state.hasLongClickEffect = true;
         if (mAudioManager != null) {
             int ringerMode = mAudioManager.getRingerModeInternal();
             boolean isSoundOn = (ringerMode == AudioManager.RINGER_MODE_NORMAL);
