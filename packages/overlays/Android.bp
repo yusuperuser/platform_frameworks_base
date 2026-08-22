@@ -33,7 +33,6 @@ phony {
         "NavigationBarModeGesturalOverlay",
         "TransparentNavigationBarOverlay",
         "NotesRoleEnabledOverlay",
-        "TrueDarkThemeOverlay",
         "preinstalled-packages-platform-overlays.xml",
     ],
 }
