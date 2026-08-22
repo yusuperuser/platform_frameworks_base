@@ -488,6 +488,21 @@ interface PolicyModule {
         ): QSTileImpl<*> {
             return if (FlashlightStrength.isEnabled) levelTile.get() else binaryTile.get()
         }
+
+        @Provides
+        @IntoMap
+        @StringKey(SoundTile.TILE_SPEC)
+        fun provideSoundTileConfig(uiEventLogger: QsEventLogger): QSTileConfig =
+            QSTileConfig(
+                tileSpec = TileSpec.create(SoundTile.TILE_SPEC),
+                uiConfig =
+                    QSTileUIConfig.Resource(
+                        iconRes = R.drawable.ic_qs_sound,
+                        labelRes = R.string.quick_settings_sound_tile_label,
+                    ),
+                instanceId = uiEventLogger.getNewInstanceId(),
+                category = TileCategory.UTILITIES,
+            )
     }
 
     /** Inject LocationTile into tileMap in QSModule */
