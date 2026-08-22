@@ -7,4 +7,5 @@ flag {
   description: "This flag enables using tile categories for tile services."
   bug: "417203376"
   is_exported: true
+  value: ENABLED
 }
