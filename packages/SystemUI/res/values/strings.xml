@@ -893,6 +893,9 @@
     <!-- QuickSettings: Onboarding text that introduces users to long press on an option in order to view the option's menu in Settings [CHAR LIMIT=NONE] -->
     <!-- QuickSettings: Do not disturb [CHAR LIMIT=NONE] -->
     <string name="quick_settings_dnd_label">Do Not Disturb</string>
+    <string name="quick_settings_sound_tile_label">Sound</string>
+    <string name="quick_settings_sound_tile_vibrate">Vibrate</string>
+    <string name="quick_settings_sound_tile_silent">Silent</string>
     <!-- QuickSettings: Do not disturb - Priority only [CHAR LIMIT=NONE] -->
     <!-- QuickSettings: Do not disturb - Alarms only [CHAR LIMIT=NONE] -->
     <!-- QuickSettings: Do not disturb - Total silence [CHAR LIMIT=NONE] -->
