@@ -140,6 +140,7 @@ interface PolicyModule {
         const val MIC_TOGGLE_TILE_SPEC = "mictoggle"
         const val MODES_TILE_SPEC = "dnd" // Value is "DND" to replace the old DND tile.
         const val MODES_DND_TILE_SPEC = "modes_dnd"
+        const val SOUND_TILE_SPEC = "sound"
 
         /** Inject ModesTile into tileMap in QSModule */
         @Provides
@@ -491,10 +492,10 @@ interface PolicyModule {
 
         @Provides
         @IntoMap
-        @StringKey(SoundTile.TILE_SPEC)
+        @StringKey(SOUND_TILE_SPEC)
         fun provideSoundTileConfig(uiEventLogger: QsEventLogger): QSTileConfig =
             QSTileConfig(
-                tileSpec = TileSpec.create(SoundTile.TILE_SPEC),
+                tileSpec = TileSpec.create(SOUND_TILE_SPEC),
                 uiConfig =
                     QSTileUIConfig.Resource(
                         iconRes = R.drawable.ic_qs_sound,
