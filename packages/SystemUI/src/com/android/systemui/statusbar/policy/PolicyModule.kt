@@ -499,7 +499,7 @@ interface PolicyModule {
                 tileSpec = TileSpec.create(SOUND_TILE_SPEC),
                 uiConfig =
                     QSTileUIConfig.Resource(
-                        iconRes = R.drawable.ic_qs_sound,
+                        iconRes = R.drawable.ic_volume_system,
                         labelRes = R.string.quick_settings_sound_tile_label,
                     ),
                 instanceId = uiEventLogger.getNewInstanceId(),
