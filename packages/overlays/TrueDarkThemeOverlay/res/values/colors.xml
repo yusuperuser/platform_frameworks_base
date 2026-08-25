@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Force pure black backgrounds for true dark mode -->
-    <color name="system_surface_container_dark">#FF000000</color>
+    <!-- True Dark: pure black base surfaces -->
+    <color name="system_background_dark">#FF000000</color>
     <color name="system_surface_dark">#FF000000</color>
     <color name="system_surface_dim_dark">#FF000000</color>
     <color name="system_surface_container_lowest_dark">#FF000000</color>
     <color name="system_surface_container_low_dark">#FF000000</color>
+    <color name="system_surface_container_dark">#FF000000</color>
+    <!-- Slightly off-black for elevated surfaces (dialogs, sheets, cards) -->
+    <color name="system_surface_container_high_dark">#FF0A0A0A</color>
+    <color name="system_surface_container_highest_dark">#FF111111</color>
+    <color name="system_surface_bright_dark">#FF1A1A1A</color>
+    <color name="system_surface_variant_dark">#FF0D0D0D</color>
+    <!-- system_surface_tint_dark intentionally not overridden — accent color -->
 </resources>
