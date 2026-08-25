@@ -78,6 +78,7 @@ import com.android.systemui.qs.tiles.impl.work.domain.interactor.WorkModeTileDat
 import com.android.systemui.qs.tiles.impl.work.domain.interactor.WorkModeTileUserActionInteractor
 import com.android.systemui.qs.tiles.impl.work.domain.model.WorkModeTileModel
 import com.android.systemui.qs.tiles.impl.work.ui.mapper.WorkModeTileMapper
+import com.android.systemui.qs.tiles.SoundTile
 import com.android.systemui.res.R
 import dagger.Binds
 import dagger.Module
@@ -529,6 +530,13 @@ interface PolicyModule {
     @IntoMap
     @StringKey(AlarmTile.TILE_SPEC)
     fun bindAlarmTile(alarmTile: AlarmTile): QSTileImpl<*>
+
+
+    /** Inject SoundTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(SoundTile.TILE_SPEC)
+    fun bindSoundTile(soundTile: SoundTile): QSTileImpl<*>
 
     @Binds
     @IntoMap
