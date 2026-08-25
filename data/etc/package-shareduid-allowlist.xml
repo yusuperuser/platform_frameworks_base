@@ -34,6 +34,5 @@ Example usage
     <allow-package-shareduid package="android.test.settings" shareduid="android.uid.system" />
     <allow-package-shareduid package="com.android.performanceLaunch" shareduid="com.android.performanceapp.tests" />
     <allow-package-shareduid package="com.miku.audioforward" shareduid="android.uid.systemui" />
-    <allow-package-shareduid package="com.miku.lyricsstub" shareduid="android.uid.system" />
     <allow-package-shareduid package="com.miku.musiccenter" shareduid="android.uid.systemui" />
 </config>
