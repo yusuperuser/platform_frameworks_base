@@ -505,6 +505,11 @@ interface PolicyModule {
                 instanceId = uiEventLogger.getNewInstanceId(),
                 category = TileCategory.UTILITIES,
             )
+        /** Inject SoundTile into tileViewModelMap in QSModule */
+        @Provides
+        @IntoMap
+        @StringKey(SOUND_TILE_SPEC)
+        fun provideSoundTileViewModel(): QSTileViewModel = StubQSTileViewModel
     }
 
     /** Inject LocationTile into tileMap in QSModule */
