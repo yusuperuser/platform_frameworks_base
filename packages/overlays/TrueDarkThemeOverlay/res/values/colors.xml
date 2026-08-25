@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Force pure black backgrounds for true dark mode -->
+    <color name="system_surface_container_dark">#FF000000</color>
+    <color name="system_surface_dark">#FF000000</color>
+    <color name="system_surface_dim_dark">#FF000000</color>
+    <color name="system_surface_container_lowest_dark">#FF000000</color>
+    <color name="system_surface_container_low_dark">#FF000000</color>
+</resources>
