@@ -769,6 +769,13 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
     @SuppressWarnings("StringCaseLocaleUsage") // Package name is not localized
     private void updateThemeOverlays() {
         final int currentUser = mUserTracker.getUserId();
+        if (mSecureSettings.getIntForUser(
+                "true_dark_active", 0, currentUser) == 1) {
+            // True Dark is active — skip generating Monet dynamic color overlays
+            // so they can't override the pure-black surface colors.
+            if (DEBUG) Log.d(TAG, "updateThemeOverlays. Skipped, True Dark is active.");
+            return;
+        }
         final String overlayPackageJson = mSecureSettings.getStringForUser(
                 Settings.Secure.THEME_CUSTOMIZATION_OVERLAY_PACKAGES,
                 currentUser);
