@@ -32,9 +32,9 @@ import javax.inject.Inject;
 public class SoundTile extends QSTileImpl<BooleanState> {
     public static final String TILE_SPEC = "sound";
 
-    private final Icon mIconNormal  = ResourceIcon.get(R.drawable.ic_qs_sound);
-    private final Icon mIconVibrate = ResourceIcon.get(R.drawable.ic_qs_sound_vibrate);
-    private final Icon mIconSilent  = ResourceIcon.get(R.drawable.ic_qs_sound_silent);
+    private final Icon mIconNormal  = ResourceIcon.get(R.drawable.ic_volume_system);
+    private final Icon mIconVibrate = ResourceIcon.get(R.drawable.ic_volume_ringer_vibrate);
+    private final Icon mIconSilent  = ResourceIcon.get(R.drawable.ic_volume_ringer_mute);
 
     private final AudioManager mAudioManager;
     private final BroadcastReceiver mReceiver;
