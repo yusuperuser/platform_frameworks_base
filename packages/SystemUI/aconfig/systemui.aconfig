@@ -1514,6 +1514,8 @@ flag {
     namespace: "systemui"
     description: "Enables the new blur effect on the Notification Shade."
     bug: "370555223"
+    is_fixed_read_only: true
+    state: ENABLED
 }
 
 flag {
